@@ -1,6 +1,7 @@
 package com.example.team_manager.controller;
 
 import java.util.ArrayList;
+import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.team_manager.model.Calciatore;
 import com.example.team_manager.service.ServiceTeams;
+import java.util.*;
 
 @RestController
 public class Controller {
@@ -21,7 +23,8 @@ public class Controller {
 	@GetMapping("/teams")
 	public ResponseEntity<?> getTeams() {
 		
-		ArrayList<String> teams = new ArrayList<>();
+		Set<String> teams = new HashSet<String>();
+		
 		try {
 			teams = service.getTeamList();
 		} catch (Exception e) {
