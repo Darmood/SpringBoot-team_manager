@@ -1,0 +1,8 @@
+Cognome;Nome;Ruolo;Forza
+Maradona;Diego;Attaccante;99
+Spadavecchia;Ignazio;Fromboliere;12
+Maradona;Diego;Attaccante;99
+Maradona;Diego;Attaccante;99
+Maradona;Diego;Attaccante;99
+Maradona;Diego;Attaccante;99
+Maradona;Diego;Attaccante;100
